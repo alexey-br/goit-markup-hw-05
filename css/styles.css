@@ -417,7 +417,9 @@ ul,h1,h2,h3,p {
     background-color: rgba(0, 0, 0, 0.2);
 
     opacity: 1;
-    transition: opacity var(--trans-dur) var(--trans-time-func);
+    visibility: visible;
+    transition: opacity var(--trans-dur) var(--trans-time-func),
+    visibility var(--trans-dur) var(--trans-time-func);
 }
 
 .backdrop.is-hidden {
